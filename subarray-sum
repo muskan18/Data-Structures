@@ -1,0 +1,61 @@
+package november13;
+
+import java.util.*;
+
+public class subarraysum {
+
+	static void func(int ar[] , int sum) {
+		
+		int ar_length = ar.length;
+		
+		for(int i=0;i<ar_length;i++)
+		{
+			
+			int q=0;
+			
+			for(int j=i+1;j<ar_length;j++) {
+				
+				
+				q+=ar[j];
+				
+				if(q==sum)
+				{
+					System.out.println("Starting index is : " + i + ",");
+					System.out.println("Ending index is : " + j);
+					break;
+				}
+			}
+			
+		}
+	}
+	
+	public static void main(String args[]) {
+	
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter the number of elements ! ");
+		
+		int no_of_elements = scan.nextInt();
+		
+		
+		int arr[] = new int[no_of_elements];
+		
+		System.out.println("Enter the elements ");
+		
+		for(int i=0;i<no_of_elements;i++)
+		{
+			
+			arr[i] = scan.nextInt();
+		}
+		
+		System.out.println("Enter the sum ! ");
+		
+		int sum = scan.nextInt();
+		
+		func(arr,sum);
+		
+		
+	}
+	
+	
+}
