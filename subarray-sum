@@ -13,7 +13,7 @@ public class subarraysum {
 			
 			int q=0;
 			
-			for(int j=i+1;j<ar_length;j++) {
+			for(int j=i;j<ar_length;j++) {
 				
 				
 				q+=ar[j];
