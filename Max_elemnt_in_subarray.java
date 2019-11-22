@@ -48,7 +48,7 @@ public class Max_elemnt_in_subarray {
 			}
 			
 			
-			System.out.print(max_element+", ");
+			System.out.print(max_element+" ");
 		}
 	}
 }
